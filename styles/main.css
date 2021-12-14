@@ -1,0 +1,1338 @@
+/* reset.css */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url(../fonts/Montserrat/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat Normal';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Normal';
+  src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+header {
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  background-image: url(../img/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .heder__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
+  margin: auto;
+  padding: 40px 0 149px 0;
+}
+
+header .heder__menu__left {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 300px;
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+  color: white;
+}
+
+header .heder__menu .heder__menu__right {
+  width: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .heder__menu .heder__menu__right .heder__menu__log {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  color: white;
+  margin: 10px 19px;
+}
+
+header .heder__menu .heder__menu__right .heder__menu__sing {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  background: none;
+  border: 1px white solid;
+  width: 90px;
+  height: 36px;
+  border-radius: 30px;
+}
+
+header .title, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+
+header .title .title__first, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title .title__first, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title .title__first, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title .title__first, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title .title__first {
+  font-family: "Montserrat Bold";
+  line-height: 63px;
+  font-size: 52px;
+  color: white;
+}
+
+header .title .title__second, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title .title__second, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title .title__second, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title .title__second, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title .title__second {
+  font-family: "Roboto Normal";
+  font-size: 24px;
+  color: white;
+  margin: 28.5px 0 33px 0;
+  letter-spacing: 0.5px;
+}
+
+header .title .title__buttom, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title .title__buttom, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title .title__buttom, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title .title__buttom, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title .title__buttom {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  background: none;
+  color: white;
+  border: 1px #ff3b3b solid;
+  width: 225px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #ff3b3b;
+}
+
+main {
+  width: 941px;
+  margin: auto;
+}
+
+main .wrapper {
+  width: 100%;
+  height: 461px;
+}
+
+main .wrapper .dreamshare__title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: #444444;
+  line-height: 32px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+  margin: 89px 0 35px 0;
+}
+
+main .wrapper .dreamshare {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .wrapper .dreamshare .dreamshare__one {
+  width: 300px;
+  height: 400px;
+  background-image: url(../img/1.png);
+  background-size: no-repeat;
+  -webkit-box-shadow: 1px 2px 8px black;
+          box-shadow: 1px 2px 8px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper {
+  margin: 0 25px 21px 25px;
+}
+
+main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper .dreamshare__one__button {
+  font-family: "Montserrat Normal";
+  font-size: 10px;
+  letter-spacing: 2px;
+  background: none;
+  color: white;
+  border: 1px #ff3b3b solid;
+  width: 70px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #ff3b3b;
+}
+
+main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper .dreamshare__one__title {
+  font-family: "Montserrat Bold";
+  color: white;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 23px 0 24px 0;
+}
+
+main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper .dreamshare__one__text {
+  font-family: "Roboto Normal";
+  color: #e3e3e3;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+main .wrapper .dreamshare .dreamshare__two {
+  width: 300px;
+  height: 400px;
+  margin: 0 20px;
+  background-image: url(../img/2.png);
+  background-size: no-repeat;
+  -webkit-box-shadow: 1px 2px 8px black;
+          box-shadow: 1px 2px 8px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .wrapper .dreamshare .dreamshare__two__wrapper {
+  margin: 0 25px 21px 25px;
+}
+
+main .wrapper .dreamshare .dreamshare__two__wrapper .dreamshare__two__button {
+  font-family: "Montserrat Normal";
+  font-size: 10px;
+  letter-spacing: 2px;
+  background: none;
+  color: white;
+  border: 1px #ff3b3b solid;
+  width: 70px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #ff3b3b;
+}
+
+main .wrapper .dreamshare .dreamshare__two__wrapper .dreamshare__two__title {
+  font-family: "Montserrat Bold";
+  color: white;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 30px 0 23px 0;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+main .wrapper .dreamshare .dreamshare__two__wrapper .dreamshare__two__text {
+  font-family: "Roboto Normal";
+  color: #e3e3e3;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+main .wrapper .dreamshare .dreamshare__three {
+  width: 300px;
+  height: 400px;
+  background-image: url(../img/3.png);
+  background-size: no-repeat;
+  -webkit-box-shadow: 1px 2px 8px black;
+          box-shadow: 1px 2px 8px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper {
+  margin: 0 25px 21px 25px;
+}
+
+main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper .dreamshare__three__button {
+  font-family: "Montserrat Normal";
+  font-size: 10px;
+  letter-spacing: 2px;
+  background: none;
+  color: white;
+  border: 1px #ff3b3b solid;
+  width: 70px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: #ff3b3b;
+}
+
+main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper .dreamshare__three__title {
+  font-family: "Montserrat Bold";
+  color: white;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 23px 0 26px 0;
+}
+
+main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper .dreamshare__three__text {
+  font-family: "Roboto Normal";
+  color: #e3e3e3;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+}
+
+main .wrapper__users {
+  margin-top: 96px;
+}
+
+main .wrapper__users .usears__title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: #444444;
+  line-height: 32px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 35px;
+  margin-bottom: 29px;
+}
+
+main .wrapper__users .users__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .wrapper__users .users__block .users__block__first, main .wrapper__users .users__block .users__block__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .wrapper__users .users__block .users__block__first .users__bradley, main .wrapper__users .users__block .users__block__second .users__bradley, main .wrapper__users .users__block .users__block__first .users__marie, main .wrapper__users .users__block .users__block__second .users__marie, main .wrapper__users .users__block .users__block__second .users__diana, main .wrapper__users .users__block .users__block__second .users__christopher {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper__users .users__block .users__block__first .users__bradley__avatar, main .wrapper__users .users__block .users__block__second .users__bradley__avatar, main .wrapper__users .users__block .users__block__first .users__marie .users__marie__avatar, main .wrapper__users .users__block .users__block__second .users__marie .users__marie__avatar, main .wrapper__users .users__block .users__block__second .users__diana .users__diana__avatar, main .wrapper__users .users__block .users__block__second .users__christopher .users__christopher__avatar {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  position: relative;
+}
+
+main .wrapper__users .users__block .users__block__first .users__bradley__avatar .avatar__hobby, main .wrapper__users .users__block .users__block__second .users__bradley__avatar .avatar__hobby, main .wrapper__users .users__block .users__block__first .users__marie .users__marie__avatar .avatar__hobby, main .wrapper__users .users__block .users__block__second .users__marie .users__marie__avatar .avatar__hobby, main .wrapper__users .users__block .users__block__second .users__diana .users__diana__avatar .avatar__hobby, main .wrapper__users .users__block .users__block__second .users__christopher .users__christopher__avatar .avatar__hobby {
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  background-color: #ff3b3b;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+main .wrapper__users .users__block .users__block__first .users__bradley__avatar .avatar__hobby .hobby, main .wrapper__users .users__block .users__block__second .users__bradley__avatar .avatar__hobby .hobby, main .wrapper__users .users__block .users__block__first .users__marie .users__marie__avatar .avatar__hobby .hobby, main .wrapper__users .users__block .users__block__second .users__marie .users__marie__avatar .avatar__hobby .hobby, main .wrapper__users .users__block .users__block__second .users__diana .users__diana__avatar .avatar__hobby .hobby, main .wrapper__users .users__block .users__block__second .users__christopher .users__christopher__avatar .avatar__hobby .hobby {
+  position: absolute;
+  right: 9px;
+  bottom: 8px;
+}
+
+main .wrapper__users .users__block .users__block__first .users__bradley__name, main .wrapper__users .users__block .users__block__second .users__bradley__name, main .wrapper__users .users__block .users__block__first .users__marie .users__marie__name, main .wrapper__users .users__block .users__block__second .users__marie .users__marie__name, main .wrapper__users .users__block .users__block__second .users__diana .users__diana__name, main .wrapper__users .users__block .users__block__second .users__christopher .users__christopher__name {
+  font-family: "Montserrat Normal";
+  line-height: 17px;
+  font-weight: 700;
+  -webkit-columns: #444444;
+          columns: #444444;
+  font-size: 14px;
+  margin: 17px 0 24px 0;
+}
+
+main .wrapper__users .users__block .users__block__first .users__bradley__text, main .wrapper__users .users__block .users__block__second .users__bradley__text, main .wrapper__users .users__block .users__block__first .users__marie .users__marie__text, main .wrapper__users .users__block .users__block__second .users__marie .users__marie__text, main .wrapper__users .users__block .users__block__second .users__diana .users__diana__text, main .wrapper__users .users__block .users__block__second .users__christopher .users__christopher__text {
+  text-align: center;
+  font-family: "Roboto Normal";
+  line-height: 14px;
+  color: #666666;
+  font-size: 14px;
+  text-justify: auto;
+}
+
+main .wrapper__users .users__block .users__block__first .users__marie .users__marie__avatar .avatar__hobby, main .wrapper__users .users__block .users__block__second .users__marie .users__marie__avatar .avatar__hobby {
+  background-color: #19d4ca;
+}
+
+main .wrapper__users .users__block .users__block__second .users__diana .users__diana__avatar .avatar__hobby {
+  background-color: #ffa710;
+}
+
+main .wrapper__users .users__block .users__block__second .users__christopher .users__christopher__avatar .avatar__hobby {
+  background-color: #667df3;
+}
+
+main .wrapper__users .wrapper__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 39px 0 91px 0;
+}
+
+main .wrapper__users .wrapper__button .usears__button {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #ff4e50;
+  background: none;
+  border: 1px #ff4e50 solid;
+  width: 180px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+main .wrapper__discover .discover__title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: #444444;
+  line-height: 32px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 34px;
+}
+
+main .wrapper__discover .discover__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .wrapper__discover .discover__block .discover__block__first, main .wrapper__discover .discover__block .discover__block__second, main .wrapper__discover .discover__block .discover__block__third {
+  width: 32%;
+  height: 308px;
+  background-image: url(../img/discover/Sport.png);
+  background-size: no-repeat;
+}
+
+main .wrapper__discover .discover__block .discover__block__first .discover__block__first__title, main .wrapper__discover .discover__block .discover__block__second .discover__block__first__title, main .wrapper__discover .discover__block .discover__block__third .discover__block__first__title, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper__discover .discover__block .discover__block__first .discover__block__first__title .title, main .wrapper__discover .discover__block .discover__block__second .discover__block__first__title .title, main .wrapper__discover .discover__block .discover__block__third .discover__block__first__title .title, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: white;
+  line-height: 27px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .wrapper__discover .discover__block .discover__block__second {
+  background-image: url(../img/discover/Healath.png);
+}
+
+main .wrapper__discover .discover__block .discover__block__third {
+  background-image: url(../img/discover/Extreme.png);
+}
+
+main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title {
+  text-align: center;
+  width: 188px;
+}
+
+main .wrapper__discover .discover__string {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 0 21px 0;
+}
+
+main .wrapper__discover .discover__string .discover__string__first {
+  width: 32%;
+  height: 310px;
+  background-image: url(../img/discover/Games.png);
+  background-size: no-repeat;
+}
+
+main .wrapper__discover .discover__string .discover__string__first .discover__string__first__title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper__discover .discover__string .discover__string__first .discover__string__first__title .title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: white;
+  line-height: 27px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .wrapper__discover .discover__string .discover__string__second {
+  width: 66%;
+  height: 310px;
+  background-image: url(../img/discover/Culture.png);
+  background-size: no-repeat;
+}
+
+main .wrapper__discover .discover__string .discover__string__second .discover__string__second__title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper__discover .discover__string .discover__string__second .discover__string__second__title .title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: white;
+  line-height: 27px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .wrapper__discover .discover__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .wrapper__discover .discover__bottom .discover__bottom__first {
+  width: 66%;
+  height: 310px;
+  background-image: url(../img/discover/relax.png);
+  background-size: no-repeat;
+}
+
+main .wrapper__discover .discover__bottom .discover__bottom__first .discover__bottom__first__title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper__discover .discover__bottom .discover__bottom__first .discover__bottom__first__title .title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: white;
+  line-height: 27px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .wrapper__discover .discover__bottom .discover__bottom__second {
+  width: 32%;
+  height: 310px;
+  background-image: url(../img/discover/traveling.png);
+  background-size: no-repeat;
+}
+
+main .wrapper__discover .discover__bottom .discover__bottom__second .discover__bottom__second__title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .wrapper__discover .discover__bottom .discover__bottom__second .discover__bottom__second__title .title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: white;
+  line-height: 27px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main .wrapper__form {
+  margin: 91px 0 102px 0;
+  height: 158px;
+}
+
+main .wrapper__form .form__title {
+  font-family: "Montserrat Normal";
+  letter-spacing: 0.5px;
+  color: #444444;
+  line-height: 32px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+
+main .wrapper__form .form__text {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Roboto Normal";
+  font-weight: 300;
+  font-size: 18px;
+  color: #7e7c7c;
+  line-height: 14px;
+}
+
+main .wrapper__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #7e7c7c;
+}
+
+main .wrapper__form form .form__input {
+  width: 299px;
+  height: 40px;
+  border-radius: 2px;
+  font-family: "Roboto Normal";
+  color: #7e7c7c;
+  border: #cccbcb 0.5px solid;
+}
+
+main .wrapper__form form .form__input__buttom {
+  width: 172px;
+  height: 40px;
+  background-color: #ff4e50;
+  border: #ff4e50 solid 1px;
+  border-radius: 20px;
+  font-family: "Montserrat Regular";
+  color: white;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+footer {
+  border-top: red solid 1px;
+}
+
+footer .footer__wrapper {
+  width: 941px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 41px;
+}
+
+footer .footer__wrapper .footer__left {
+  width: 544px;
+}
+
+footer .footer__wrapper .footer__left .footer__left__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer__wrapper .footer__left .footer__left__column .column__first .column__dreamshare {
+  font-family: "Montserrat Regular";
+  font-size: 16px;
+  color: #ff3b3b;
+}
+
+footer .footer__wrapper .footer__left .footer__left__column .column__second .company {
+  font-family: "Montserrat Bold";
+  font-size: 14px;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+footer .footer__wrapper .footer__left .footer__left__column .column__second .company__list {
+  height: 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .footer__wrapper .footer__left .footer__left__column .column__second .company__list .company__li {
+  font-family: "Montserrat Regular";
+  font-weight: 300;
+  font-size: 14px;
+  color: #7e7c7c;
+}
+
+footer .footer__wrapper .footer__left .footer__left__column .column__third .partners {
+  font-family: "Montserrat Bold";
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+
+footer .footer__wrapper .footer__right {
+  width: 397px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer .footer__wrapper .footer__right .footer__designer {
+  width: 83px;
+  height: 9px;
+  margin-bottom: 8px;
+}
+
+footer .footer__wrapper .footer__right .footer__bitmap {
+  width: 110px;
+  height: 24px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  header {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header .heder__menu {
+    width: 100%;
+  }
+  header .heder__menu .heder__menu__left {
+    margin-left: 47px;
+  }
+  header .heder__menu .heder__menu__right {
+    margin-right: 11px;
+  }
+  main {
+    width: 748px;
+  }
+  main .wrapper .dreamshare__title {
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 94px;
+  }
+  main .wrapper .dreamshare .dreamshare__one {
+    width: 236px;
+  }
+  main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper {
+    margin: 0 20px 16px 20px;
+  }
+  main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper .dreamshare__one__title {
+    width: 196px;
+    height: 33px;
+    line-height: 14px;
+    margin-top: 45px;
+  }
+  main .wrapper .dreamshare .dreamshare__two {
+    width: 236px;
+  }
+  main .wrapper .dreamshare .dreamshare__two .dreamshare__two__wrapper {
+    margin: 0 20px 16px 20px;
+  }
+  main .wrapper .dreamshare .dreamshare__two .dreamshare__two__wrapper .dreamshare__two__title {
+    margin-top: 17px;
+  }
+  main .wrapper .dreamshare .dreamshare__three {
+    width: 236px;
+  }
+  main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper {
+    margin: 0 20px 16px 20px;
+  }
+  main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper .dreamshare__three__title {
+    width: 196px;
+    height: 33px;
+    line-height: 14px;
+    margin-top: 45px;
+  }
+  main .wrapper__users {
+    width: 492px;
+    margin: 95px auto;
+  }
+  main .wrapper__users .usears__title {
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 36px;
+  }
+  main .wrapper__users .users__block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .wrapper__users .users__block .users__block__first, main .wrapper__users .users__block .users__block__second {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .wrapper__users .users__block .users__block__first .users__bradley, main .wrapper__users .users__block .users__block__second .users__bradley, main .wrapper__users .users__block .users__block__first .users__marie, main .wrapper__users .users__block .users__block__second .users__marie, main .wrapper__users .users__block .users__block__second .users__diana, main .wrapper__users .users__block .users__block__second .users__christopher {
+    width: 100%;
+    height: 224px;
+    margin-bottom: 32px;
+  }
+  main .wrapper__users .users__block .users__block__first .users__marie, main .wrapper__users .users__block .users__block__second .users__marie {
+    margin-bottom: 0px;
+  }
+  main .wrapper__users .users__block .users__block__second .users__christopher {
+    margin-bottom: 0px;
+  }
+  main .wrapper__users .wrapper__button {
+    margin-top: 22px;
+  }
+  main .wrapper__discover {
+    width: 748px;
+  }
+  main .wrapper__discover .discover__title {
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+  }
+  main .wrapper__discover .discover__block .discover__block__first, main .wrapper__discover .discover__block .discover__block__second, main .wrapper__discover .discover__block .discover__block__third {
+    width: 31.5%;
+    height: 310px;
+    background-position: center;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .wrapper__discover .discover__block .discover__block__first .discover__block__first__title, main .wrapper__discover .discover__block .discover__block__second .discover__block__first__title, main .wrapper__discover .discover__block .discover__block__third .discover__block__first__title, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title {
+    width: 150px;
+  }
+  main .wrapper__discover .discover__block .discover__block__third {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title {
+    width: 206px;
+  }
+  main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title {
+    width: 206px;
+  }
+  main .wrapper__discover .discover__string .discover__string__first {
+    width: 31.5%;
+    height: 310px;
+  }
+  main .wrapper__discover .discover__bottom .discover__bottom__second {
+    width: 31.5%;
+    height: 310px;
+    background-image: url(../img/img768/Copy.png);
+  }
+  main .wrapper__form {
+    margin-top: 96px;
+    margin-bottom: 99px;
+  }
+  main .wrapper__form .form__title {
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+  }
+  footer .footer__wrapper {
+    width: 100%;
+  }
+  footer .footer__wrapper .footer__left {
+    width: 100%;
+    margin-left: 40px;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__first {
+    width: 25%;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__second {
+    width: 24%;
+    margin-left: 40px;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__third {
+    width: 24%;
+  }
+  footer .footer__wrapper .footer__right {
+    width: 35%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    height: 540px;
+    background-image: url(../img/img320/Background-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  header .heder__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 21px 0 28px 0;
+  }
+  header .heder__menu .heder__menu__left {
+    width: 130px;
+    margin-top: 95px;
+  }
+  header .title, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title {
+    width: 272px;
+  }
+  header .title .title__first, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title .title__first, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title .title__first, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title .title__first, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title .title__first {
+    font-size: 29px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+  }
+  header .title .title__second, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title .title__second, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title .title__second, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title .title__second, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title .title__second {
+    margin: 5px 0 15px 0;
+    font-size: 18px;
+    line-height: 24.5px;
+  }
+  header .title .title__buttom, header main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title .title__buttom, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title header .title .title__buttom, header main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title .title__buttom, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title header .title .title__buttom {
+    width: 280px;
+  }
+  main {
+    width: 320px;
+  }
+  main .wrapper {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  main .wrapper .dreamshare__title {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 35px 0 15px 0;
+  }
+  main .wrapper .dreamshare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 740px;
+  }
+  main .wrapper .dreamshare .dreamshare__one {
+    width: 300px;
+    height: 240px;
+    background-image: url(../img/img320/1.png);
+    background-repeat: no-repeat;
+  }
+  main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper {
+    margin: 0 25px 15px 19px;
+  }
+  main .wrapper .dreamshare .dreamshare__one .dreamshare__wrapper .dreamshare__one__title {
+    line-height: 14px;
+    margin-top: 46px;
+    margin-bottom: 23px;
+  }
+  main .wrapper .dreamshare .dreamshare__two {
+    width: 300px;
+    height: 240px;
+    background-image: url(../img/img320/2.png);
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  main .wrapper .dreamshare .dreamshare__two .dreamshare__two__wrapper {
+    margin: 0 25px 15px 19px;
+  }
+  main .wrapper .dreamshare .dreamshare__two .dreamshare__two__wrapper .dreamshare__two__title {
+    line-height: 14px;
+    margin-bottom: 22px;
+  }
+  main .wrapper .dreamshare .dreamshare__three {
+    width: 300px;
+    height: 240px;
+    background-image: url(../img/img320/3.png);
+    background-repeat: no-repeat;
+  }
+  main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper {
+    margin: 0 25px 15px 19px;
+  }
+  main .wrapper .dreamshare .dreamshare__three .dreamshare__three__wrapper .dreamshare__three__title {
+    line-height: 14px;
+    margin: 45px 0 24px 0;
+  }
+  main .wrapper__users {
+    margin-top: 0px;
+  }
+  main .wrapper__users .usears__title {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 36px 0 14px 0;
+  }
+  main .wrapper__users .users__block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .wrapper__users .users__block .users__block__first, main .wrapper__users .users__block .users__block__second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .wrapper__users .users__block .users__block__first .users__bradley, main .wrapper__users .users__block .users__block__second .users__bradley, main .wrapper__users .users__block .users__block__first .users__marie, main .wrapper__users .users__block .users__block__second .users__marie, main .wrapper__users .users__block .users__block__second .users__diana, main .wrapper__users .users__block .users__block__second .users__christopher {
+    width: 75%;
+    height: 225px;
+  }
+  main .wrapper__users .users__block .users__block__second .users__diana {
+    height: 222px;
+    margin-top: 13px;
+  }
+  main .wrapper__users .wrapper__button {
+    margin-top: 15px;
+    margin-bottom: 36px;
+  }
+  main .wrapper__users .wrapper__button .usears__button {
+    width: 280px;
+  }
+  main .wrapper__discover .discover__title {
+    font-size: 22px;
+    line-height: 26px;
+    width: 280px;
+    height: 54px;
+    margin-left: 22px;
+    margin-bottom: 34px;
+  }
+  main .wrapper__discover .discover__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 378px;
+  }
+  main .wrapper__discover .discover__block .discover__block__first, main .wrapper__discover .discover__block .discover__block__second, main .wrapper__discover .discover__block .discover__block__third {
+    background-image: url(../img/img320/descover/Sport.png);
+    width: 300px;
+    height: 120px;
+    background-position: center;
+  }
+  main .wrapper__discover .discover__block .discover__block__first .discover__block__first__title .title, main .wrapper__discover .discover__block .discover__block__second .discover__block__first__title .title, main .wrapper__discover .discover__block .discover__block__third .discover__block__first__title .title, main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title, main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title {
+    width: 65%;
+    padding-bottom: 27px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .wrapper__discover .discover__block .discover__block__second {
+    background-image: url(../img/img320/descover/Healath.png);
+  }
+  main .wrapper__discover .discover__block .discover__block__second .discover__block__second__title .title {
+    padding-bottom: 0px;
+  }
+  main .wrapper__discover .discover__block .discover__block__third {
+    background-image: url(../img/img320/descover/Extremee.png);
+  }
+  main .wrapper__discover .discover__block .discover__block__third .discover__block__third__title .title {
+    padding-bottom: 0px;
+  }
+  main .wrapper__discover .discover__string {
+    height: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 10px 0 11px 0;
+  }
+  main .wrapper__discover .discover__string .discover__string__first {
+    background-image: url(../img/img320/descover/Games.png);
+    width: 300px;
+    height: 120px;
+    background-position: right;
+  }
+  main .wrapper__discover .discover__string .discover__string__second {
+    background-image: url(../img/img320/descover/Culturec.png);
+    width: 300px;
+    height: 120px;
+    background-position: right;
+  }
+  main .wrapper__discover .discover__bottom {
+    height: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .wrapper__discover .discover__bottom .discover__bottom__first {
+    width: 300px;
+    height: 120px;
+  }
+  main .wrapper__discover .discover__bottom .discover__bottom__second {
+    width: 300px;
+    height: 120px;
+  }
+  main .wrapper__form {
+    margin-top: 36px;
+    margin-bottom: 74px;
+  }
+  main .wrapper__form .form__title {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 35px 0 18px 20px;
+    width: 280px;
+    height: 54px;
+  }
+  main .wrapper__form .form__text {
+    margin-bottom: 15px;
+  }
+  main .wrapper__form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main .wrapper__form form .form__input {
+    width: 280px;
+    height: 40px;
+  }
+  main .wrapper__form form .form__input__buttom {
+    width: 280px;
+    height: 40px;
+    margin: 10px 0 40px 0;
+  }
+  footer .footer__wrapper {
+    margin-top: 23px;
+    width: 320px;
+    height: 250px;
+    display: block;
+  }
+  footer .footer__wrapper .footer__left {
+    width: 200px;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__first {
+    margin-bottom: 15px;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__second .company {
+    margin-bottom: 0px;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__second .company__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    line-height: 26px;
+    margin-bottom: 6px;
+    width: 194px;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__third {
+    margin-bottom: 14px;
+  }
+  footer .footer__wrapper .footer__left .footer__left__column .column__third .partners {
+    margin: 4px 0 3px 0;
+  }
+  footer .footer__wrapper .footer__right {
+    width: 320px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
