@@ -520,7 +520,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 321px) and (max-width: 768px) {
+@media screen and (min-width: 401px) and (max-width: 768px) {
     header {
         background-repeat: no-repeat;
         background-position: center;
@@ -688,7 +688,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     header {
         height: 540px;
         background-image: url(../img/img320/Background-2.png);
