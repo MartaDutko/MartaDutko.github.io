@@ -1,0 +1,53 @@
+@mixin title ($ff, $ls, $c, $lh, $fs, $ta, $fw){
+    font-family: $ff;
+    letter-spacing: $ls;
+    color: $c;
+    line-height: $lh;
+    font-size: $fs;
+    text-align: $ta;
+    font-weight: $fw;  
+}
+@mixin block-text ($ff, $ls, $c, $lh, $fs, $fw){
+    font-family: $ff;
+    letter-spacing: $ls;
+    color: $c;
+    line-height: $lh;
+    font-size: $fs;
+    font-weight: $fw;  
+}
+@mixin buttom($ff, $fs, $ls, $bg, $c, $brd, $w, $h, $bdr,$bc ){
+    font-family: $ff;
+    font-size: $fs;
+    letter-spacing: $ls;
+    background:$bg;
+    color: $c;
+    border: $brd;
+    width: $w;
+    height: $h;
+    border-radius: $bdr;
+    background-color: $bc;
+}
+@mixin dreamshare-text ($ff, $c, $fs,$lh){
+    font-family: $ff;
+    color: $c;
+    font-size: $fs;
+    line-height: $lh;
+}
+@mixin dreamshare-text-two($ff, $c, $fs,$lh, $fw){
+    font-family: $ff;
+    color: $c;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin title_tablet( $ls, $lh, $fs, $ta, $fw){
+    letter-spacing: $ls;
+    line-height: $lh;
+    font-size: $fs;
+    text-align: $ta;
+    font-weight: $fw;  
+}
+@mixin title_mobile($fs,$lh){
+    font-size: $fs;
+    line-height: $lh; 
+}
